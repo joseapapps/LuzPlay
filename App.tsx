@@ -1,11 +1,11 @@
 
 import React, { useState } from 'react';
-import { AppProvider, useApp } from './context/AppContext';
-import Navbar from './components/Navbar';
-import Home from './pages/Home';
-import ShortsPage from './pages/ShortsPage';
-import AdminDashboard from './pages/AdminDashboard';
-import LoginPage from './pages/LoginPage';
+import { AppProvider, useApp } from './context/AppContext.tsx';
+import Navbar from './components/Navbar.tsx';
+import Home from './pages/Home.tsx';
+import ShortsPage from './pages/ShortsPage.tsx';
+import AdminDashboard from './pages/AdminDashboard.tsx';
+import LoginPage from './pages/LoginPage.tsx';
 import { Smartphone, Play, Heart, Star, Mail } from 'lucide-react';
 
 const Footer: React.FC<{ onNavigate: (page: string) => void }> = ({ onNavigate }) => (
@@ -17,7 +17,6 @@ const Footer: React.FC<{ onNavigate: (page: string) => void }> = ({ onNavigate }
         </h2>
         <p className="text-sm opacity-60">Sua plataforma de vídeos que iluminam o caminho. Reflexões, orações e mensagens bíblicas para o seu dia a dia.</p>
         
-        {/* Atalhos Rápidos agora Funcionais */}
         <div className="flex gap-4">
           <button 
             onClick={() => onNavigate('shorts')}
