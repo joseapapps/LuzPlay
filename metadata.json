@@ -1,0 +1,8 @@
+{
+  "name": "LuzPlay",
+  "description": "Uma plataforma de streaming moderna inspirada na Netflix, com suporte a vídeos horizontais e verticais, sistema de anúncios e painel administrativo.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

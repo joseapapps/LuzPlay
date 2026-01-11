@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LuzPlay - Vídeos que Iluminam sua Fé</title>
+    <!-- SEO Basic -->
+    <meta name="description" content="Assista a reflexões, orações e mensagens bíblicas na LuzPlay. A luz que sua alma precisa." />
+    <meta property="og:title" content="LuzPlay - Gospel & Inspiração" />
+    <meta property="og:description" content="Mensagens de autoajuda e fé em um só lugar." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1504052434569-70ad5836ab65?auto=format&fit=crop&q=80&w=1200" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                primary: '#f59e0b', // Dourado
+                secondary: '#3b82f6', // Azul Celestial
+                accent: '#fbbf24',
+                dark: '#0f172a',
+                light: '#f8fafc'
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #f59e0b;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #d97706;
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      @keyframes gradient-y {
+        0%, 100% { background-position: 50% 0%; }
+        50% { background-position: 50% 100%; }
+      }
+      .animate-gradient {
+        background-size: 100% 200%;
+        animation: gradient-y 10s ease infinite;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+</head>
+  <body class="bg-brand-light dark:bg-brand-dark text-slate-900 dark:text-slate-100 transition-colors duration-300">
+    <div id="root"></div>
+  </body>
+</html>
